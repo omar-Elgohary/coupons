@@ -20,7 +20,7 @@
   <div class="container mx-auto overflow-hidden mt-6 p-4">
     <div
       class="bg-gradient-to-br from-purple-600 to-indigo-600 text-white text-center py-10 px-20 rounded-lg shadow-md relative">
-      <img src="{{ asset('public/uploads/images/'.$coupon->company->image)}}" class="w-20 mx-auto mb-4 rounded-lg">
+      <img src="{{ asset('uploads/images/'.$coupon->company->image)}}" class="w-20 mx-auto mb-4 rounded-lg">
 
       <h1 class="text-2xl font-semibold mb-6>">{{$coupon->title}}</h1>
 

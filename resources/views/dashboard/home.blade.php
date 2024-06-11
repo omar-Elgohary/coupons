@@ -33,7 +33,7 @@
                 <div class="overflow-hidden bg-white rounded-lg shadow-md">
                     <div class="relative">
                         <a href="{{ route('showAdminCoupon', $item) }}">
-                            <img class="w-full h-auto object-cover" src="{{ asset('public/uploads/images/' . $item->image) }}" alt="Image">
+                            <img class="w-full h-auto object-cover" src="{{ asset('uploads/images/' . $item->image) }}" alt="Image">
                         </a>
                     </div>
                 </div>

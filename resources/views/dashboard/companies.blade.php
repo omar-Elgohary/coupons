@@ -60,7 +60,7 @@
                 <tbody id="data">
                 <tr class="text-center bg-gray-100 border-b r">
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-center text-gray-900">{{$key+1}}</td>
-                    <td><img src="{{ asset('public/uploads/images/' . $item->image) }}" alt="" width="50" height="50" class="m-auto"></td>
+                    <td><img src="{{ asset('uploads/images/' . $item->image) }}" alt="" width="50" height="50" class="m-auto"></td>
                     <td class="text-base font-medium text-gray-900 px-6 py-4 text-center whitespace-nowrap">{{ $item->name_ar }} - {{ $item->name_en }}</td>
                     <td class="text-base font-medium text-gray-900 px-6 py-4 text-center whitespace-nowrap">{{$item->coupons->count()}}</td>
 

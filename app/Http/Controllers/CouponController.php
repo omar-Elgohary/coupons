@@ -15,11 +15,11 @@ class CouponController extends Controller
         $company = Company::find($id);
         $accessToken = '4285adcb6acab1';
         $client = new Ipinfo($accessToken);
-        // $ip = $request->ip();
-        $ip = '102.47.15.16'; 
+        $ip = $request->ip();
+        // $ip = '102.47.15.16'; 
+        // $ip = '2.59.54.0'; 
 
         $details = $client->getDetails($ip);
-
         $MyCountry = Country::where('code', $details->country)->first();
 
         if($MyCountry){
